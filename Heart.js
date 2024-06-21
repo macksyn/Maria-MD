@@ -32,7 +32,7 @@ let afk = require("./Gallery/lib/afk");
 const { fetchBuffer, buffergif } = require("./Gallery/lib/myfunc2")
 
 /////log
- global.modnumber = '919060791616' 
+ global.modnumber = 2348089782988' 
 //Gallery/database
 let ntilinkall =JSON.parse(fs.readFileSync('./Gallery/database/antilink.json'));
 // let autoblck =JSON.parse(fs.readFileSync('./Gallery/database/autoblock.json'));
@@ -45,9 +45,9 @@ let hit = JSON.parse(fs.readFileSync('./Gallery/database/total-hit-user.json'))
 const replay = (teks) => {
             Maria.sendMessage(m.chat, { text: teks}, { quoted: m})
         }
-const xtime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
-        const xdate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
-        const time2 = moment().tz('Asia/Kolkata').format('HH:mm:ss')  
+const xtime = moment.tz('Africa/Lagos').format('HH:mm:ss')
+        const xdate = moment.tz('Africa/Lagos').format('DD/MM/YYYY')
+        const time2 = moment().tz('Africa/Lagos').format('HH:mm:ss')  
          if(time2 < "23:59:00"){
 var Ayushytimewisher = `Good Night 🌌`
  }
@@ -341,7 +341,7 @@ async function Telesticker(url) {
       return;
     }
 
-   m.reply(`\`\`\`🤖 Bot Detected!!\`\`\`\n\n_✅ Kicked *@${m.sender.split("@")[0]}*_`, { mentions: [m.sender] });
+   m.reply(`\`\`\`🤖 Bot Detected!!\`\`\`\n\n_✅ Removed *@${m.sender.split("@")[0]}*_`, { mentions: [m.sender] });
    Maria.groupParticipantsUpdate(m.chat, [m.sender], 'remove');
    m.deleteMsg(m.key);
     return;
@@ -354,7 +354,7 @@ async function Telesticker(url) {
                if (budy.match('http') && budy.match('https'))   
    {
 if (!isBotAdmins) return
-bvl = `\`\`\`「 Link Detected 」\`\`\`\n\nyou are a group admin thats why i wont kick you, but remember from next time`
+bvl = `\`\`\`「 Link Detected 」\`\`\`\n\nyou are a group admin thats why i wont remove you, but remember from next time that links are not allowed in this group! `
 if (isAdmins) return reply(bvl)
 if (m.key.fromMe) return reply(bvl)
 if (isCreator) return reply(bvl)
@@ -368,7 +368,7 @@ if (isCreator) return reply(bvl)
 			        }
 			    })
 			Maria.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
-Maria.sendMessage(from, {text:`\`\`\`「 Link Detected 」\`\`\`\n\n@${m.sender.split("@")[0]} Has been kicked because of sending link in this group`, contextInfo:{mentionedJid:[m.sender]}}, {quoted:m})
+Maria.sendMessage(from, {text:`\`\`\`「 Link Detected 」\`\`\`\n\n@${m.sender.split("@")[0]} Has been removed for sending link in this group`, contextInfo:{mentionedJid:[m.sender]}}, {quoted:m})
 } else {
 }
 	    //total features by xeon sir
@@ -1084,15 +1084,15 @@ let repoInfo = await axios.get("https://api.github.com/repos/AYUSH-PANDEY023/Mar
         let repo = repoInfo.data;
         console.log(repo);
 
-   const scritxt = `*🚀𝑴𝒂𝒓𝒊𝒂-𝑩𝒐𝒕-𝑺𝒄𝒓𝒊𝒑𝒕🚀*\n
-  *🌟Creator:* 𝑨𝒚𝒖𝒔𝒉 𝒑𝒂𝒏𝒅𝒆𝒚\n
+   const scritxt = `*🚀Neptune-𝑩𝒐𝒕-𝑺𝒄𝒓𝒊𝒑𝒕🚀*\n
+  *🌟Creator:* Alex Macksyn \n
   *🌟 Repo:* ${repo.html_url}\n
   *🌟 Total Forks:* ${repo.forks_count}\n
   *⭐ Total Stars:* ${repo.stargazers_count}\n
   *📁 Repo Size:* ${(repo.size/1024).toFixed(2)} MB\n
   *📅 Last Updated:* ${repo.updated_at}\n
  
-©️ *Ayush Bots inc* 
+©️ *Macksyn Bots inc* 
 *❝ Dont forget to give a Star ⭐ to the repo.*`
 
         Maria.sendMessage(from, { video: { url: 'https://media.tenor.com/Zco-fadJri4AAAPo/code-matrix.mp4' }, gifPlayback: true, caption: scritxt }, { quoted: m })
@@ -2375,7 +2375,7 @@ case 'doraemon': {
   reply(mess.wait);
   await Maria.sendMessage(m.chat, {
     image: await getBuffer('https://doremon-api.onrender.com'), // Change the URL to your Doraemon wallpaper
-    caption: 'Check out this Doraemon wallpaper! 🤖✨\n\n© Ayush Botz.Inc', // Customize the caption as you like
+    caption: 'Check out this Doraemon wallpaper! 🤖✨\n\n© Macksyn Botz.Inc', // Customize the caption as you like
   }, { quoted: m });
 }
 break;
@@ -2385,7 +2385,7 @@ case 'pokemon': {
   reply(mess.wait);
   await Maria.sendMessage(m.chat, {
     image: await getBuffer('https://ayush-pokemon.onrender.com/'), // Change the URL to your Pokemon wallpaper
-    caption: 'Here is a Pokemon wallpaper for you! ⚡🔥\n\n© Ayush Botz.Inc', // Customize the caption as you like
+    caption: 'Here is a Pokemon wallpaper for you! ⚡🔥\n\n© Macksyn Botz.Inc', // Customize the caption as you like
   }, { quoted: m });
 }
 break;
@@ -3189,7 +3189,7 @@ case 'chat':
         
 case "info":
             Maria.sendMessage(from, { react: { text: "", key: m.key }}) 
-        let ifx = `❁ ════ ❃•💙 *MARIA* 💙•❃ ════ ❁
+        let ifx = `❁ ════ ❃•💙 *NEPTUNE* 💙•❃ ════ ❁
 
 \`\`\`A FULL FLEDGED MULTI DEVICE WHATSAPP BOT WITH COOL FEATURES\`\`\`
 
@@ -3197,10 +3197,10 @@ case "info":
 \`\`\`A simple and easy-to-use WhatsApp bot project based on Multi-Device Baileys and written in JavaScript\`\`\`
 
 ❁ ══════ ❃•📄 *NOTE* 📄•❃ ══════ ❁
-\`\`\`This bot is a free open source project by THE TEAM AYUSH\`\`\`
+\`\`\`This bot is a free open source project by MACKSYN INC\`\`\`
 
 ❁ ═════ ❃•📑 *GITHUB* 📑•❃ ═════ ❁
-*_LINK:- https://github.com/AYUSH-PANDEY023/Maria-MD_*
+*_LINK:- https://github.com/macksyn/Maria-MD_*
 
 
 ❁ ═══ ❃•✍🏻 *CONTRIBUTE* ✍🏻•❃ ═══ ❁
